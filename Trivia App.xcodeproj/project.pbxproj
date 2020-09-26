@@ -10,7 +10,6 @@
 		74BC70B3251E19E00005CEDB /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BC70B2251E19E00005CEDB /* SummaryViewController.swift */; };
 		74BC70C1251E57D20005CEDB /* DataDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BC70C0251E57D20005CEDB /* DataDictionary.swift */; };
 		74BC70CB251E71830005CEDB /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BC70CA251E71830005CEDB /* CoreData.swift */; };
-		74BC70D5251E90960005CEDB /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BC70D4251E90960005CEDB /* HistoryViewController.swift */; };
 		74BC70DA251E92720005CEDB /* GameHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BC70D8251E92720005CEDB /* GameHistoryCell.swift */; };
 		74BC70DB251E92720005CEDB /* GameHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74BC70D9251E92720005CEDB /* GameHistoryCell.xib */; };
 		74BC70E4251E9B150005CEDB /* GameHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BC70E2251E9B150005CEDB /* GameHistoryViewController.swift */; };
@@ -31,7 +30,6 @@
 		74BC70B2251E19E00005CEDB /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		74BC70C0251E57D20005CEDB /* DataDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDictionary.swift; sourceTree = "<group>"; };
 		74BC70CA251E71830005CEDB /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
-		74BC70D4251E90960005CEDB /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		74BC70D8251E92720005CEDB /* GameHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHistoryCell.swift; sourceTree = "<group>"; };
 		74BC70D9251E92720005CEDB /* GameHistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameHistoryCell.xib; sourceTree = "<group>"; };
 		74BC70E2251E9B150005CEDB /* GameHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHistoryViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 				74F43285251DF480009FEE8D /* CricketQuestionViewController.swift */,
 				74F43269251DEEFF009FEE8D /* ViewController.swift */,
 				74BC70B2251E19E00005CEDB /* SummaryViewController.swift */,
-				74BC70D4251E90960005CEDB /* HistoryViewController.swift */,
 				74BC70E2251E9B150005CEDB /* GameHistoryViewController.swift */,
 			);
 			path = Controller;
@@ -214,7 +211,6 @@
 				74F43270251DEEFF009FEE8D /* Trivia_App.xcdatamodeld in Sources */,
 				74F43297251E1199009FEE8D /* FlagColorViewController.swift in Sources */,
 				74BC70CB251E71830005CEDB /* CoreData.swift in Sources */,
-				74BC70D5251E90960005CEDB /* HistoryViewController.swift in Sources */,
 				74F43286251DF480009FEE8D /* CricketQuestionViewController.swift in Sources */,
 				74BC70B3251E19E00005CEDB /* SummaryViewController.swift in Sources */,
 				74F43268251DEEFF009FEE8D /* SceneDelegate.swift in Sources */,

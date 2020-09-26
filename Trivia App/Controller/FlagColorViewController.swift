@@ -75,6 +75,7 @@ class FlagColorViewController: UIViewController {
         }
     }
     @IBAction func nextButtonAction(_ sender: Any) {
+       
         if (flag1 == false && flag2 == false && flag3 == false && flag4 == false){
             let alert = UIAlertController(title: "Anyone of answer should be selected",
                                           message: "Kindly select any one of the answer",
@@ -89,30 +90,86 @@ class FlagColorViewController: UIViewController {
             present(alert, animated: true)
         } else {
             
-            if(flag1 == true) {
+            if (flag1 == true){
                 flagAnswer = whiteLabelOutlet.text!
-               // flagColorAnser.append(whiteLabelOutlet.text! as NSString)
-            } else if(flag2 == true) {
-                if (flagAnswer != ""){
-                flagAnswer = flagAnswer + "," + yellowLabelOutlet.text!
-                } else {
-                    flagAnswer = orangeLabelOutlet.text!
+                if (flag2 == true) {
+                    flagAnswer = flagAnswer + ", " + yellowLabelOutlet.text!
+                    if (flag3 == true) {
+                        flagAnswer = flagAnswer + ", " + orangeLabelOutlet.text!
+                        if (flag4 == true) {
+
+                            flagAnswer = flagAnswer + ", " + greenLabelOutlet.text!
+                        } else {
+//                            flagAnswer = whiteLabelOutlet.text! + ", " + yellowLabelOutlet.text! + ", " + orangeLabelOutlet.text!
+                        }
+                    } else if (flag4 == true) {
+                        flagAnswer = whiteLabelOutlet.text! + ", " + greenLabelOutlet.text!
+                    }
+                } else if (flag3 == true) {
+                    flagAnswer = flagAnswer + ", " + orangeLabelOutlet.text!
+                    if (flag4 == true) {
+                        flagAnswer = flagAnswer + ", " + greenLabelOutlet.text!
+                    }
+                } else if (flag4 == true) {
+                    flagAnswer = flagAnswer + ", " + greenLabelOutlet.text!
                 }
-              //  flagColorAnser.append(yellowLabelOutlet.text! as NSString)
-            } else if(flag3 == true){
-                if (flagAnswer != ""){
-                    flagAnswer = flagAnswer + "," + orangeLabelOutlet.text!
-                } else {
-                    flagAnswer = orangeLabelOutlet.text!
-                }
-               // flagColorAnser.append(orangeLabelOutlet.text! as NSString)
-            }else if(flag4 == true){
-                if (flagAnswer != ""){
-                flagAnswer = flagAnswer + "," + greenLabelOutlet.text!
-                } else {
-                    flagAnswer = orangeLabelOutlet.text!
+            } else if(flag1 == false){
+                if (flag2 == true) {
+                    flagAnswer = yellowLabelOutlet.text!
+                    if (flag3 == true) {
+                        flagAnswer = flagAnswer + ", " + orangeLabelOutlet.text!
+                        if (flag4 == true) {
+                            flagAnswer = flagAnswer + ", " + greenLabelOutlet.text!
+                        } else {
+                          //  flagAnswer = yellowLabelOutlet.text! + ", " + orangeLabelOutlet.text!
+                        }
+                    } else {
+                       //flagAnswer = yellowLabelOutlet.text!
+                    }
+                } else if (flag2 == false){
+                    if (flag3 == true) {
+                        flagAnswer = orangeLabelOutlet.text!
+                        if (flag4 == true) {
+                            flagAnswer = flagAnswer + ", " + greenLabelOutlet.text!
+                        } else {
+                          //  flagAnswer = orangeLabelOutlet.text!
+                        }
+                    } else if (flag3 == false) {
+                        if (flag4 == true) {
+                            flagAnswer = greenLabelOutlet.text!
+                        } else {
+                            flagAnswer = orangeLabelOutlet.text!
+                        }
+                    }
                 }
             }
+            
+//            if(flag1 == true) {
+//                flagAnswer = whiteLabelOutlet.text!
+//               // flagColorAnser.append(whiteLabelOutlet.text! as NSString)
+//            } else if(flag2 == true) {
+//                if (flagAnswer != ""){
+//                flagAnswer = flagAnswer + "," + yellowLabelOutlet.text!
+//                } else {
+//                    flagAnswer = orangeLabelOutlet.text!
+//                }
+//              //  flagColorAnser.append(yellowLabelOutlet.text! as NSString)
+//            } else if(flag3 == true){
+//                if (flagAnswer != ""){
+//                    flagAnswer = flagAnswer + "," + orangeLabelOutlet.text!
+//                } else {
+//                    flagAnswer = orangeLabelOutlet.text!
+//                }
+//               // flagColorAnser.append(orangeLabelOutlet.text! as NSString)
+//            }else if(flag4 == true){
+//                if (flagAnswer != ""){
+//                flagAnswer = flagAnswer + "," + greenLabelOutlet.text!
+//                } else {
+//                    flagAnswer = orangeLabelOutlet.text!
+//                }
+//            }
+            
+            print(self.flagAnswer)
             
             GlobalValue.shared.flagAnswer = self.flagAnswer
             

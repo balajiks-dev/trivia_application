@@ -510,36 +510,6 @@
             </objects>
             <point key="canvasLocation" x="3082.608695652174" y="63.616071428571423"/>
         </scene>
-        <!--History View Controller-->
-        <scene sceneID="ij1-cL-LnY">
-            <objects>
-                <viewController storyboardIdentifier="HistoryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jiA-bB-6Wf" customClass="HistoryViewController" customModule="Trivia_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nnu-Rm-4uk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pIb-4o-Qdq">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="2mn-7p-dCa"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="pIb-4o-Qdq" firstAttribute="leading" secondItem="2mn-7p-dCa" secondAttribute="leading" id="1B7-cH-cyy"/>
-                            <constraint firstItem="2mn-7p-dCa" firstAttribute="trailing" secondItem="pIb-4o-Qdq" secondAttribute="trailing" id="X1l-4x-zNC"/>
-                            <constraint firstItem="pIb-4o-Qdq" firstAttribute="top" secondItem="2mn-7p-dCa" secondAttribute="top" id="ZC4-6l-pu3"/>
-                            <constraint firstItem="2mn-7p-dCa" firstAttribute="bottom" secondItem="pIb-4o-Qdq" secondAttribute="bottom" id="dbw-gM-ARC"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="aaa" destination="pIb-4o-Qdq" id="nge-cR-XDK"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tjz-Fa-yaD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3849" y="64"/>
-        </scene>
         <!--Game History View Controller-->
         <scene sceneID="AE4-W3-L3e">
             <objects>
@@ -556,7 +526,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SQC-qZ-Now" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4641" y="63"/>
+            <point key="canvasLocation" x="3841" y="64"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sRd-Et-vNh">
